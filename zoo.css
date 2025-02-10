@@ -1,7 +1,14 @@
 main {
     display: flex;
-    gap: 20px; 
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    gap: 20px;
     padding: 20px;
+    justify-content: center;
+}
+
+section {
+    flex: 1 1 calc(20% - 40px); /* Responsive sizing: 3 sections per row */
+    max-width: 365px; /* Limit the width */
 }
 section article{
     display:flex;
